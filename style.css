@@ -1,0 +1,308 @@
+/* ===== GENERAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #eef1f5;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+hr {
+    display: none;
+}
+
+/* ===== HEADER ===== */
+header {
+    background:
+        linear-gradient(rgba(20, 30, 55, 0.85), rgba(20, 30, 55, 0.85)),
+        url("images/rosmichessfksm26.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 45px 40px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 4px solid #f0c75e;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    flex-shrink: 0;
+
+    border: 8px solid white;
+    border-bottom-width: 24px;       /* thicker bottom, like a Polaroid */
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.job-title {
+    margin: 6px 0 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f0c75e;
+}
+
+/* badges */
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.badges span {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* contact list */
+.contact-list {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 15px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.contact-list i {
+    width: 30px;
+    color: #f0c75e;
+    font-size: 1.05rem;
+}
+
+.contact-list a {
+    color: white;
+}
+
+.contact-list a:hover {
+    color: #f0c75e;
+}
+
+/* WhatsApp and Telegram buttons */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.social-links .whatsapp {
+    background-color: #25d366;
+}
+
+.social-links .telegram {
+    background-color: #229ed9;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+section:last-of-type {
+    border-radius: 0 0 12px 12px;
+    border-bottom: none;
+}
+
+h3 {
+    color: #1f2a44;
+    border-bottom: 3px solid #f0c75e;
+    padding-bottom: 6px;
+    margin-top: 0;
+    display: inline-block;
+}
+
+/* ===== LISTS ===== */
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::marker {
+    color: #f0c75e;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #2a5db0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f08c00;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #1f2a44;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+tbody tr:hover {
+    background-color: #fff4d6;
+}
+
+/* ===== FORM ===== */
+form {
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f0c75e;
+    box-shadow: 0 0 5px rgba(240, 199, 94, 0.8);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #1f2a44;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #f0c75e;
+    color: #1f2a44;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background-color: #888;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 700px) {
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .badges,
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-list li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
