@@ -166,6 +166,23 @@ h3 {
     display: inline-block;
 }
 
+/* ===== TWO SECTIONS SIDE BY SIDE (Certificate + Professional Background) ===== */
+.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;      /* two equal columns */
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.side-by-side section {
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.side-by-side section:first-child {
+    border-right: 1px solid #e0e0e0;     /* thin line between the two columns */
+}
+
 /* ===== LISTS ===== */
 ul, ol {
     padding-left: 25px;
@@ -279,7 +296,55 @@ button[type="reset"] {
     background-color: #888;
 }
 
+/* ===== CERTIFICATE ===== */
+.certificate-img {
+    width: 280px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.certificate-img:hover {
+    transform: scale(1.03);
+}
+
+iframe {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* ===== POSTER IMAGE ===== */
+.poster-img {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.poster-img:hover {
+    transform: scale(1.03);
+}
+
 /* ===== MOBILE ===== */
+@media (max-width: 800px) {
+    /* stack Certificate and Professional Background */
+    .side-by-side {
+        grid-template-columns: 1fr;
+    }
+
+    .side-by-side section:first-child {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
 @media (max-width: 700px) {
     .header-inner {
         flex-direction: column;
