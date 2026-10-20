@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Rosmi bin Abd Razak, MCF National Trainer, chess trainer and arbiter.">
     <title>Rosmi bin Abd Razak - Chess Trainer</title>
 
-    <!-- Icon library -->
+    <!-- Icon library (needs internet) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
+    <header id="contact">
         <div class="header-inner">
 
-            <img class="profile-photo" src="images/Rosmi.png" alt="Profile photo of Rosmi bin Abd Razak">
+            <img class="profile-photo" src="images/Rosmi.png" width="200" height="240" alt="Profile photo of Rosmi bin Abd Razak">
 
             <div class="header-text">
                 <h1>ROSMI BIN ABD RAZAK</h1>
                 <p class="job-title">Chess Trainer</p>
+                <p id="greeting" class="greeting"></p>
 
                 <div class="badges">
                     <span>FIDE ID: 5790999</span>
@@ -27,103 +29,145 @@
                 </div>
 
                 <ul class="contact-list">
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:rosmiabdrazak@gmail.com">rosmiabdrazak@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:rosmiabdrazak@yahoo.com.my">rosmiabdrazak@yahoo.com.my</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+60172219816">017-221 9816</a>
-                    </li>
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:rosmiabdrazak@gmail.com">rosmiabdrazak@gmail.com</a></li>
+                    <li><i class="fa-solid fa-at" aria-hidden="true"></i>
+                        <a href="mailto:rosmiabdrazak@yahoo.com.my">rosmiabdrazak@yahoo.com.my</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+60172219816">017-221 9816</a></li>
                 </ul>
 
                 <div class="social-links">
-                    <a class="whatsapp" href="https://wa.me/60172219816" target="_blank" title="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a class="telegram" href="https://t.me/+60172219816" target="_blank" title="Telegram">
-                        <i class="fa-brands fa-telegram"></i> Telegram
-                    </a>
+                    <a class="whatsapp" href="https://wa.me/60172219816" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                    <a class="telegram" href="https://t.me/+60172219816" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram</a>
                 </div>
             </div>
-
         </div>
     </header>
 
-    <hr>
+    <!-- NAVIGATION -->
+    <nav aria-label="Main navigation">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#engagement">Engagement</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" type="button">Dark mode</button>
+    </nav>
 
-    <!-- OVERVIEW -->
-    <section>
-        <h3>OVERVIEW</h3>
-        <ul>
-            <li>International Chess Federation Identification (<strong>FIDE ID</strong>):
-                <a href="https://ratings.fide.com/profile/5790999" target="_blank">5790999</a></li>
-            <li>The Malaysian Chess Federation Identification (<strong>MCF ID</strong>): <strong>MCF231000136</strong></li>
-            <li>Completed Train-The-Trainer and Coach Seminar, certified as
-                <strong>NT (National Trainer)</strong> and approved by The Malaysian Chess Federation
-                (<a href="https://malaysiachess.org/announcement/train-the-trainer-1/" target="_blank" rel="noopener">view announcement</a>)</li>
-        </ul>
-    </section>
+    <main>
 
-    <!-- CERTIFICATE + PROFESSIONAL BACKGROUND (side by side) -->
-    <div class="side-by-side">
-
-        <!-- CERTIFICATE -->
-        <section>
-            <h3>CERTIFICATE</h3>
-            <p><strong>National Trainer (Level 1)</strong>, The Malaysian Chess Federation. Effective December 2023.</p>
-
-            <a href="documents/national-trainer-certificate.pdf" target="_blank" rel="noopener">
-                <img class="certificate-img" src="images/certificate.jpg" alt="MCF National Trainer certificate of Rosmi Abd Razak">
-            </a>
-            <p><em>Click the image to open the full certificate (PDF).</em></p>
-        </section>
-
-        <!-- PROFESSIONAL BACKGROUND -->
-        <section>
-            <h3>PROFESSIONAL BACKGROUND</h3>
+        <!-- PROFILE -->
+        <section id="profile">
+            <h2>PROFILE</h2>
+            <p>Chess trainer and tournament arbiter, certified as an MCF National Trainer. Originally from
+                Rembau, Negeri Sembilan, and now staying in Cyberjaya, Selangor, Malaysia. Currently
+                balancing a career at a government agency with part-time chess training and a Computer Science degree.</p>
             <ul>
-                <li>Chess trainer for beginner level players at <strong>Traju Chess Centre</strong>, Putrajaya.
-                    Classes on Wednesday, Thursday and Friday, 8.00pm till 9.30pm.
-
-                    <a href="images/PosterChessTrajuRosmi.png" target="_blank" rel="noopener">
-                        <img class="poster-img" src="images/PosterChessTrajuRosmi.png" alt="Poster of chess classes at Traju Chess Centre">
-                    </a>
-                </li>
-
-                <li>Works for a government agency as <em>IT Human Resources / Programmer</em>.</li>
+                <li>International Chess Federation Identification (<strong>FIDE ID</strong>):
+                    <a href="https://ratings.fide.com/profile/5790999" target="_blank" rel="noopener">5790999</a></li>
+                <li>The Malaysian Chess Federation Identification (<strong>MCF ID</strong>): <strong>MCF231000136</strong></li>
+                <li>Completed Train-The-Trainer and Coach Seminar, certified as
+                    <strong>NT (National Trainer)</strong> and approved by The Malaysian Chess Federation
+                    (<a href="https://malaysiachess.org/announcement/train-the-trainer-1/" target="_blank" rel="noopener">view announcement</a>)</li>
             </ul>
         </section>
 
-    </div>
+        <!-- SKILLS + ACHIEVEMENTS -->
+        <div class="side-by-side">
+            <section id="skills">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>Basic principles of chess opening</li>
+                    <li>Focus on chess education</li>
+                    <li>Experience in tournament arbitration</li>
+                    <li>Basic knowledge of Swiss Manager</li>
+                </ul>
+            </section>
 
-    <!-- EDUCATION -->
-    <section>
-        <h3>EDUCATIONAL ATTAINMENT</h3>
-        <ol>
-            <li>Currently pursuing a Bachelor's Degree in Computer Science (Honors),
-                Universiti Teknologi MARA (UiTM) Shah Alam, Selangor.</li>
-            <li>Graduated with a Diploma in Computer Science,
-                Universiti Teknologi MARA (UiTM) Dungun, Terengganu.</li>
-            <li>Sekolah Menengah Teknik Port Dickson, Negeri Sembilan - Kejuruteraan Mekanikal.</li>
-        </ol>
-    </section>
+            <section id="achievements">
+                <h2>ACHIEVEMENTS</h2>
+                <ul>
+                    <li><strong>Champion</strong>, Kejohanan Catur SMT Port Dickson 2001</li>
+                    <li>Certified <strong>MCF National Trainer (Level 1)</strong>, December 2023</li>
+                    <li>Represented the Suruhanjaya Perkhidmatan Pelajaran (SPP) at MAKSWIP 2010</li>
+                    <li>Represented MOT at MAKSWIP 2026</li>
+                </ul>
+            </section>
+        </div>
 
-    <!-- ENGAGEMENT HISTORY TABLE -->
-    <section>
-        <h3>ENGAGEMENT HISTORY</h3>
-        <table border="1" cellpadding="8" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Event</th>
-                    <th>Role</th>
-                </tr>
-            </thead>
-            <tbody>
+        <!-- EXPERIENCE + CERTIFICATE -->
+        <div class="side-by-side">
+            <section id="experience">
+                <h2>EXPERIENCE</h2>
+                <h3>Chess Trainer, Traju Chess Centre, Putrajaya</h3>
+                <ul>
+                    <li>Trains beginner level players.</li>
+                    <li>Classes on Wednesday, Thursday and Friday, 8.00pm till 9.30pm.</li>
+                </ul>
+                <a href="images/PosterChessTrajuRosmi.png" target="_blank" rel="noopener">
+                    <img class="poster-img" src="images/PosterChessTrajuRosmi.png" width="500" height="708"
+                         alt="Poster of chess classes at Traju Chess Centre" loading="lazy">
+                </a>
+
+                <h3>IT Human Resources / Programmer, Government Agency</h3>
+                <ul>
+                    <li>Works in IT for a government agency, supporting Human Resources.</li>
+                </ul>
+
+                <h3>Tournament Arbiter and Secretariat Logistic</h3>
+                <ul>
+                    <li>Official at national and state level chess tournaments since 2018 (see Engagement History).</li>
+                </ul>
+            </section>
+
+            <section id="certificate">
+                <h2>CERTIFICATE</h2>
+                <p><strong>National Trainer (Level 1)</strong>, The Malaysian Chess Federation. Effective December 2023.</p>
+                <a href="documents/national-trainer-certificate.pdf" target="_blank" rel="noopener">
+                    <img class="certificate-img" src="images/certificate.jpg" width="600" height="867"
+                         alt="MCF National Trainer certificate of Rosmi Abd Razak" loading="lazy">
+                </a>
+                <p><em>Click the image to open the full certificate (PDF).</em></p>
+
+                <p><strong>Swiss Manager (Beginners Class)</strong>, The Malaysian Chess Federation. Effective September 2024.</p>
+                <a href="documents/swiss-manager-certificate.pdf" target="_blank" rel="noopener">
+                    <img class="certificate-img" src="images/swiss-manager-certificate.png" width="600" height="867"
+                         alt="MCF Swiss Manager certificate of Rosmi Abd Razak" loading="lazy">
+                </a>
+                <p><em>Click the image to open the full certificate (PDF).</em></p>
+            </section>
+        </div>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>EDUCATIONAL ATTAINMENT</h2>
+            <ol>
+                <li>Currently pursuing <strong>a Bachelor's Degree in Computer Science (Honors)</strong>,
+                    Universiti Teknologi MARA (UiTM) Shah Alam, Selangor.</li>
+                <li>Graduated with <strong>a Diploma in Computer Science</strong>,
+                    Universiti Teknologi MARA (UiTM) Dungun, Terengganu.</li>
+                <li>Sekolah Menengah Teknik Port Dickson <strong>(SMTPD)</strong>, Negeri Sembilan - Kejuruteraan Mekanikal.</li>
+                <li>Sekolah Menengah Kebangsaan Undang Rembau <strong>(URESS)</strong>, Negeri Sembilan.</li>
+            </ol>
+        </section>
+
+        <!-- ENGAGEMENT HISTORY -->
+        <section id="engagement">
+            <h2>ENGAGEMENT HISTORY</h2>
+            <table lang="ms">
+                <caption>Chess tournaments played, arbitrated or organised</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Event</th>
+                        <th scope="col">Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+
                 <tr>
                     <td>Kejohanan Catur SMT Port Dickson 2001</td>
                     <td>Player / Champion</td>
@@ -188,69 +232,20 @@
                     <td>Pertandingan Catur Kementerian Pertanian dan Keterjaminan Makanan (KPKM) Sempena Hari Sukan Negara 2026</td>
                     <td>Arbiter / Secretariat Logistic</td>
                 </tr>
-            </tbody>
-        </table>
-        <p><em>Updated on 20.10.26</em></p>
-    </section>
+                            </tbody>
+            </table>
+           <!-- <p><em>Updated on 20.10.26</em></p> -->
+        </section>
 
-    <!-- CONTACT FORM -->
-    <section>
-        <h3>CONTACT ME</h3>
-        <form action="mailto:rosmiabdrazak@gmail.com" method="post" enctype="text/plain">
+    </main>
 
-            <p>
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
-            </p>
+    <footer>
+        <p>&copy; 2026 Rosmi bin Abd Razak. Contact:
+            <a href="mailto:rosmiabdrazak@gmail.com">rosmiabdrazak@gmail.com</a> |
+            <a href="tel:+60172219816">017-221 9816</a>
+            | <a href="#contact">Back to top</a></p>
+    </footer>
 
-            <p>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </p>
-
-            <p>
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="e.g. 0123456789">
-            </p>
-
-            <p>
-                <label for="subject">I am interested in:</label><br>
-                <select id="subject" name="subject">
-                    <option value="class">Chess Class</option>
-                    <option value="arbiter">Arbiter / Tournament Service</option>
-                    <option value="other">Other</option>
-                </select>
-            </p>
-
-            <p>
-                <label>Level of player <em>(for Chess Class only):</em></label><br>
-                <input type="radio" id="na" name="level" value="na" checked>
-                <label for="na">Not applicable</label>
-                <input type="radio" id="beginner" name="level" value="beginner">
-                <label for="beginner">Beginner</label>
-                <input type="radio" id="intermediate" name="level" value="intermediate">
-                <label for="intermediate">Intermediate</label>
-                <input type="radio" id="advanced" name="level" value="advanced">
-                <label for="advanced">Advanced</label>
-            </p>
-
-            <p>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
-            </p>
-
-            <p>
-                <input type="checkbox" id="agree" name="agree" required>
-                <label for="agree">I agree to be contacted.</label>
-            </p>
-
-            <p>
-                <button type="submit">Send Message</button>
-                <button type="reset">Clear</button>
-            </p>
-
-        </form>
-    </section>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
